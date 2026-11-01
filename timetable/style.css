@@ -1,0 +1,18 @@
+td {
+  border: 1px solid black;
+  text-align: center;
+  height: 60px;
+}
+
+.lunch {
+  border: none;
+}
+
+.second-row {
+  font-size: 15px;
+}
+
+th {
+  margin-left: 34px;
+  background-color: lightblue;
+}

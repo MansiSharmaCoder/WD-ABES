@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time table</title>
+    
+    <style>
+        table{
+            width: 100vw;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            border-collapse: collapse;
+        }
+
+        table,th{
+            border: 1px solid black;
+           
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" style="background-color: violet;">Time <br>Day</th>
+                <th >1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+            </tr>
+
+            <tr class="second-row">
+                <th>8:50-9:40</th>
+                <th>9:40-10:30</th>
+                <th>10:40-11:30</th>
+                <th>11:30-12:20</th>
+                <th>12:20-1:10</th>
+                <th>1:10-2:00</th>
+                <th>2:00-2:50</th>
+                <th>2:50-3:40</th>
+                <th>3:40-4:30</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr >
+                <td style="background-color: aquamarine;">Monday</td>
+                <td style="background-color: brown;">L&nbsp;&nbsp;&nbsp;BH210 <br> 25CA-104-AP</td>
+                <td style="background-color: yellow;">MCA-C-SP</td>
+                <td colspan="2" style="text-align: center; background-color: violet;">P&nbsp;&nbsp;BH-210&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25CA151-AK+SV</td>
+                <td class="lunch" style="background-color: blueviolet;"></td>
+                <td style="background-color: chartreuse;">L&nbsp;&nbsp;&nbsp;BH210 <br> 25CA-102-AS</td>
+                <td colspan="2" style="background-color: chocolate;">L&nbsp;&nbsp;&nbsp;BH210 <br>25VC-101-APY</td>
+                <td style="background-color: blue;">L&nbsp;&nbsp;&nbsp;BH210 <br> 25CA-103-SG</td>
+            </tr>
+
+            <tr>
+                <td style="background-color: red;">Tuesday</td>
+                <td style="background-color: cadetblue;">L&nbsp;&nbsp;&nbsp;BH210 <br> 25CA-103-SG</td>
+                <td style="background-color:chocolate ;">L&nbsp;&nbsp;&nbsp;BH210 <br> 25CA-102-AS</td>
+                <td colspan="2" style="text-align: center; background-color: beige;">P&nbsp;&nbsp;BH-210&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="text-align: end;">25VC151-APY+CJ</span></td>
+                <td class="lunch" style="background-color:blueviolet;"></td>
+                <td colspan="2" style="background-color: gray;">L&nbsp;&nbsp;&nbsp;BH210 <br> 25CA-101-AK</td>
+                <td style="background-color: yellow;">MCA-C-SP</td>
+                <td style="background-color: turquoise;">L&nbsp;&nbsp;&nbsp;BH210 <br> 25CA-104-AP</td>
+                
+            </tr>
+
+            <tr>
+                <td style="background-color: tomato;">Wednesday</td>
+                <td style="background-color: yellowgreen;">MCA-C |VA <BR>(SJ)</BR></td>
+                <td style="background-color:crimson;">L&nbsp;&nbsp;&nbsp;BH210 <br> 25CA-101-AK</td>
+                <td style="background-color: springgreen;">L&nbsp;&nbsp;&nbsp;BH210 <br> 25CA-103-SG</td>
+                <td style="background-color: slateblue;">L&nbsp;&nbsp;&nbsp;BH210 <br>25VC-101-APY</td>
+                <td class="lunch" style="background-color: blueviolet;">Lunch</td>
+                <td style="background-color: seagreen;">L&nbsp;&nbsp;&nbsp;BH210 <br> 25CA-104-AP</td>
+                <td style="background-color: saddlebrown;">L&nbsp;&nbsp;&nbsp;BH210 <br> 25CA-102-AS</td>  
+                <td colspan="2" style="background-color: royalblue;">P&nbsp;&nbsp;BH-210 <BR>25CA154-AP+ST</BR></td>
+            </tr>
+
+            <tr>
+                <td style="background-color: rosybrown;">Thursday</td>
+                <td style="background-color: plum;">L&nbsp;&nbsp;&nbsp;BH210 <br> 25CA-102-AS</td>
+                <td style="background-color: sienna;">L&nbsp;&nbsp;&nbsp;BH210 <br> 25CA-101-AK</td>
+                <td colspan="2" style="text-align: center; background-color: violet;">MCA-C-SP</td>
+                <td class="lunch" style="background-color: blueviolet;"></td>
+                <td style="background-color: sandybrown;">L&nbsp;&nbsp;&nbsp;BH210 <br>25VC-101-APY</td>
+                <td style="background-color: powderblue;">L&nbsp;&nbsp;&nbsp;BH210 <br> 25CA-104-AP</td>
+                <td style="background-color: yellow;">L&nbsp;&nbsp;&nbsp;BH210 <br>25VC-101-APY</td>
+                <td style="background-color: violet;">L&nbsp;&nbsp;&nbsp;BH210 <br> 25CA-103-SG</td>
+            </tr>
+
+            <tr>
+                <td style="background-color: turquoise;">Friday</td>
+                <td style="background-color: cadetblue;">L&nbsp;&nbsp;&nbsp;BH210 <br> 25CA-104-AP</td>
+                <td style="background-color: chocolate;">L&nbsp;&nbsp;&nbsp;BH210 <br> 25CA-103-SG</td>
+                <td style="background-color: violet;">L&nbsp;&nbsp;&nbsp;BH210 <br> 25CA-101-AK</td>
+                <td style="background-color: lightcoral;">L&nbsp;&nbsp;&nbsp;BH210 <br> 25CA-102-AS</td>
+                <td class="lunch" style="background-color: blueviolet;"></td>
+                <td colspan="2" style="background-color: springgreen;">MCA-C(QA)</td>
+                <td colspan="2" style="background-color: aqua;">MM Meeting <br>(AK+AS)</td>
+                
+            </tr>
+
+        </tbody>
+    </table>
+
+</body>
+</html>
