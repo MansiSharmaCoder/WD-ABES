@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+</head>
+
+<body>
+
+    <h2>Student Personal Details</h2>
+
+    <form action="/registration">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="name">Student Name:</label>
+            <input type="text" placeholder="Full Name" id="name" name="fullname">
+
+            <br>
+            <br>
+            <label for="email">Student Email:</label>
+            <input type="email" placeholder="E-mail address" id="email" name="email">
+
+            <br>
+            <br>
+
+            <label for="pswd">Password:</label>
+            <input type="password" name="pswd" id="pwd" required placeholder="create your password">
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="pswd">Confirm
+                Password:</label>
+            <input type="password" name="pswd" id="pswd" placeholder="confirm password">
+            <br>
+            <br>
+            <label for="DOB">Date of Birth:</label>
+            <input type="date" name="DOB" id="DOB" required>
+            <br>
+            <br>
+
+            <label for="Gender">Gender:</label>
+            <input type="radio" name="Gender" id="Gender">
+            <label for="Gender">Male</label>
+
+            <input type="radio" name="Gender" id="Gender">
+            <label for="Gender">Female</label>
+
+            <br>
+            <br>
+            <label for="Contact">Contact No:</label>
+            <input type="number" name="Contact" id="Contact">
+
+        </fieldset>
+        <br>
+
+
+        <fieldset>
+            <legend>Course Details</legend>
+
+            <label for="Course">Select a Course:</label>
+            <select name="Course" id="Course">
+                <option value="" disabled selected>Choose a course...</option>
+                <option value="MCA">MCA</option>
+                <option value="BCA">BCA</option>
+                <option value="B.TECH">B.TECH</option>
+                <option value="BBA">BBA</option>
+            </select>
+
+            <label for=""></label>
+            
+
+        </fieldset>
+
+        <label for="submit"></label>
+        <input type="submit" name="Submit" id="Submit">
+    </form>
+</body>
+
+</html>

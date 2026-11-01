@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+</head>
+
+<body style="background-color: black;">
+    <fieldset style="width: 600px; margin: auto; background-color: rgb(229, 236, 249); border-color: rgb(255, 255, 255); ">
+        <h1 align=" center" style="margin-top: 10px; margin-bottom: 40px; font-size: 50px; color: black;">
+            University Enquiry Form
+        </h1>
+        <form action="#">
+            <div class="name">
+                <label for="Name"><b>Student Name:*</b><br />
+
+                    <span>
+                        <input type="text" name="Name" id="Name" placeholder="&nbsp;First" required style="
+                  margin-top: 10px;
+                  width: 285px;
+                  height: 25px;
+                  font-size: medium;
+                  margin-right: 5px;
+                " required />
+                    </span>
+
+                    <span>
+
+                    <input type="text" name="Name" id="Name" placeholder="&nbsp;Last" required style="
+                margin-top: 10px;
+                width: 285px;
+                height: 25px;
+                font-size: medium;
+                margin-left: 5px;
+              " required />
+
+                    </span>
+
+                </label>
+            </div>
+
+            <br /><br />
+
+            <div class="studentdob">
+                <label for="DOB"><b>Student Date of Birth:*</b>
+                    <br />
+                    <input type="date" name="DOB" id="DOB" style="margin-top: 10px; width: 100%; height: 25px" required />
+                </label>
+            </div>
+
+            <br /><br />
+
+            <div class="address">
+                <label for="E-mail"><b>Student email address:*</b>
+
+                    <input type="email" name="E-mail" id="E-mail" style="margin-top: 10px; width: 100%; height: 25px"  required />
+                </label>
+            </div>
+            <br /><br />
+
+            <div class="citizenship">
+                <label for="Citizenship"><b>Student Citizenship:*</b> <br />
+
+                    <span class="stud-citi" style="
+                display: inline-block;
+                width: 169.5px;
+                padding: 12px 8px;
+                margin: 5px;
+                background: white;
+                border: 1px solid #ddd;
+                box-shadow: 0 1px 3px #bbb;
+              ">
+                        <input type="radio" name="Citizenship" id="citizenship" required />
+                        <label for="stud-citi" >Indian</label>
+                    </span>
+
+                    <span class="newbox" style="
+                margin-top: 8px;
+                display: inline-block;
+                width: 169.5px;
+                padding: 12px 8px;
+                margin: 5px;
+                background: white;
+                border: 1px solid #ddd;
+                box-shadow: 0 1px 3px #bbb;
+              ">
+                        <input type="radio" name="Citizenship" id="newbox"  required />
+                        <label for="newbox">US Citizen</label>
+                    </span>
+
+                    <span class="others" style="
+                margin-top: 8px;
+                display: inline-block;
+                width: 169.5px;
+                padding: 12px 8px;
+                margin: 5px;
+                background: white;
+                border: 1px solid #ddd;
+                box-shadow: 0 1px 3px #bbb;
+              ">
+                        <input type="radio" name="Citizenship" id="others" required />
+                        <label for="others">Others:</label>
+                    </span>
+                </label>
+            </div>
+            <br /><br />
+
+            <div class="address1">
+                <label for="Address" style="margin-top: 10px"><b>Resident Address:*</b></label>
+                <br />
+                <input type="text" name="Address" id="Address" placeholder="Street Address" required style="
+              margin-top: 10px;
+              width: 100%;
+              height: 25px;
+              font-size: medium;
+            " />
+
+                <input type="text" name="Address" id="Address" placeholder="Street Address Line 2" required style="
+              margin-top: 15px;
+              width: 100%;
+              height: 25px;
+              font-size: medium;
+            " />
+
+                <span>
+                    <input type="text" name="Address" id="Address" placeholder="City" required style="
+                margin-top: 15px;
+                width: 47.5%;
+                height: 25px;
+                font-size: medium;
+              " />
+                </span>
+
+                <span>
+                    <input type="text" name="Address" id="Address" placeholder="Region" style="
+                margin-left: 11px;
+                margin-top: 15px;
+                width: 47.5%;
+                height: 25px;
+                font-size: medium;
+              " />
+                </span>
+            </div>
+
+            <dv class="button" align="center">
+
+                <input type="submit" value="Submit" style="width: 100px; margin-top: 15px; border-color: tomato; align-self: center;" >
+            </dv>
+        </form>
+    </fieldset>
+</body>
+
+</html>
