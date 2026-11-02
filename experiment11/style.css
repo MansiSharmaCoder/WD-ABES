@@ -1,0 +1,181 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf0f8;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+.header {
+    background-color: #174b85;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 15px;
+    color: #dceaff;
+}
+
+form {
+    padding: 30px;
+}
+
+h2 {
+    color: #174b85;
+    font-size: 19px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #dce6f2;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.input-box {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.input-box label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd4df;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #174b85;
+}
+
+.radio-group {
+    display: flex;
+    gap: 25px;
+    padding: 10px 0;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: normal;
+}
+
+.radio-group input {
+    width: auto;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.terms input {
+    width: auto;
+}
+
+.terms p {
+    font-size: 14px;
+    color: #444;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+button {
+    padding: 13px 25px;
+    border: none;
+    border-radius: 6px;
+    background-color: #174b85;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0e345f;
+}
+
+.reset-btn {
+    background-color: #777;
+}
+
+.reset-btn:hover {
+    background-color: #555;
+}
+
+.footer {
+    background-color: #f1f5fa;
+    text-align: center;
+    padding: 18px;
+    color: #666;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .radio-group {
+        gap: 15px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}

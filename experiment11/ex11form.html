@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>STUDENT ADMISSION FORM</h1>
+            <p>Welcome to Our College Admission Portal</p>
+        </div>
+
+        <form>
+
+            <h2>Personal Information</h2>
+
+            <div class="form-row">
+                <div class="input-box">
+                    <label>First Name</label>
+                    <input type="text" placeholder="Enter first name" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Enter last name" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-box">
+                    <label>Date of Birth</label>
+                    <input type="date" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Blood Group</label>
+                    <select>
+                        <option value="">Select Blood Group</option>
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>O+</option>
+                        <option>O-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" required> Male</label>
+                    <label><input type="radio" name="gender"> Female</label>
+                    <label><input type="radio" name="gender"> Other</label>
+                </div>
+            </div>
+
+            <h2>Contact Information</h2>
+
+            <div class="form-row">
+                <div class="input-box">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="example@gmail.com" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Mobile Number</label>
+                    <input type="tel" placeholder="Enter mobile number"
+                    pattern="[0-9]{10}" maxlength="10" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-box">
+                    <label>State</label>
+                    <input type="text" placeholder="Enter your state" required>
+                </div>
+
+                <div class="input-box">
+                    <label>City</label>
+                    <input type="text" placeholder="Enter your city" required>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <label>Full Address</label>
+                <textarea rows="3" placeholder="Enter your complete address" required></textarea>
+            </div>
+
+            <h2>Academic Information</h2>
+
+            <div class="form-row">
+                <div class="input-box">
+                    <label>Previous Qualification</label>
+                    <select required>
+                        <option value="">Select Qualification</option>
+                        <option>10th</option>
+                        <option>12th</option>
+                        <option>Graduation</option>
+                        <option>Post Graduation</option>
+                    </select>
+                </div>
+
+                <div class="input-box">
+                    <label>Applying For</label>
+                    <select required>
+                        <option value="">Select Course</option>
+                        <option>BCA</option>
+                        <option>BBA</option>
+                        <option>B.Tech</option>
+                        <option>MCA</option>
+                        <option>MBA</option>
+                        <option>M.Tech</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-box">
+                    <label>Previous School / College</label>
+                    <input type="text" placeholder="Enter institution name">
+                </div>
+
+                <div class="input-box">
+                    <label>Passing Year</label>
+                    <input type="number" placeholder="Enter passing year">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-box">
+                    <label>Percentage / CGPA</label>
+                    <input type="text" placeholder="Enter marks or CGPA">
+                </div>
+
+                <div class="input-box">
+                    <label>Admission Session</label>
+                    <select required>
+                        <option value="">Select Session</option>
+                        <option>2026-27</option>
+                        <option>2027-28</option>
+                        <option>2028-29</option>
+                    </select>
+                </div>
+            </div>
+
+            <h2>Parent / Guardian Information</h2>
+
+            <div class="form-row">
+                <div class="input-box">
+                    <label>Father's Name</label>
+                    <input type="text" placeholder="Enter father's name" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Mother's Name</label>
+                    <input type="text" placeholder="Enter mother's name">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-box">
+                    <label>Guardian Mobile Number</label>
+                    <input type="tel" placeholder="Enter mobile number"
+                    pattern="[0-9]{10}" maxlength="10" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Parent's Occupation</label>
+                    <input type="text" placeholder="Enter occupation">
+                </div>
+            </div>
+
+            <h2>Document Upload</h2>
+
+            <div class="form-row">
+                <div class="input-box">
+                    <label>Student Photograph</label>
+                    <input type="file" accept="image/*" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Upload Previous Marksheet</label>
+                    <input type="file" accept=".pdf,.jpg,.jpeg,.png">
+                </div>
+            </div>
+
+            <div class="terms">
+                <input type="checkbox" required>
+                <p>I declare that all the information provided above is correct.</p>
+            </div>
+
+            <div class="buttons">
+                <button type="submit">Submit Application</button>
+                <button type="reset" class="reset-btn">Reset Form</button>
+            </div>
+
+        </form>
+
+        <div class="footer">
+            <p>© 2026 Student Admission Portal | All Rights Reserved</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
