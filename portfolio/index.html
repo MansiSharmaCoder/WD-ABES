@@ -1,288 +1,168 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mansi Sharma | Portfolio</title>
-    <link rel="stylesheet" href="portfolio.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mansi Sharma | Portfolio</title>
+<meta name="description" content="Portfolio of Mansi Sharma, MCA student and aspiring software engineer.">
+<link rel="stylesheet" href="portfolio.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="progress"></div>
 
-    <header class="navbar">
-        <div class="logo">Mansi<span>.</span></div>
+<header class="navbar">
+<input type="checkbox" id="themeSwitch" class="sr" aria-label="Dark mode">
+<input type="checkbox" id="menuSwitch" class="sr" aria-label="Menu">
+<a href="#home" class="logo">Mansi<span>.</span></a>
+<nav class="nav-links">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+<div class="nav-actions">
+<label for="themeSwitch" class="icon-btn" title="Switch theme">◐</label>
+<label for="menuSwitch" class="icon-btn menu-btn" title="Menu">☰</label>
+</div>
+</header>
 
-        <nav class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+<main>
+<section id="home" class="home">
+<div class="home-content">
+<p class="status"><i></i>Open to internships and entry-level roles</p>
+<h1>Hi, I'm <em>Mansi Sharma</em>.<br>I build <span class="typed"><span style="--n:17">AI-powered tools.</span><span style="--n:20">responsive websites.</span><span style="--n:16">Python projects.</span><span style="--n:20">ideas into software.</span></span></h1>
+<p class="home-description">I'm an MCA student who enjoys turning ideas into working software, from AI tools to clean, responsive websites.</p>
+<div class="home-actions">
+<a href="#projects" class="primary-btn">See my projects</a>
+<a href="#contact" class="ghost-btn">Get in touch</a>
+</div>
+<div class="stats">
+<div><strong style="--n:6"></strong><span>Technologies</span></div>
+<div><strong style="--n:2"></strong><span>Projects built</span></div>
+<div><strong style="--n:1"></strong><span>AI app shipped</span></div>
+</div>
+</div>
+<div class="home-image">
+<div class="photo-frame"><img src="mansi.png" alt="Mansi Sharma"></div>
+<div class="float-card fc1"><span>🐍</span>Python</div>
+<div class="float-card fc2"><span>⚡</span>JavaScript</div>
+<div class="float-card fc3"><span>🤖</span>AI</div>
+</div>
+</section>
 
-    <main>
+<section id="about" class="about section">
+<div class="section-heading">
+<h2>About me</h2>
+<p>A little about who I am and where I'm headed.</p>
+</div>
+<div class="about-content reveal">
+<div class="about-image"><img src="mansi.png" alt="Mansi Sharma"></div>
+<div class="about-text">
+<h3>Curious learner, practical builder.</h3>
+<p>I'm Mansi Sharma, an MCA student and aspiring software engineer with a strong interest in software development, web technologies and artificial intelligence.</p>
+<p>I enjoy exploring new technologies, sharpening my programming skills and building projects that solve real-world problems. My goal is to grow into a skilled developer and keep learning in the technology industry.</p>
+<div class="about-details">
+<div><strong>Name</strong><span>Mansi Sharma</span></div>
+<div><strong>Education</strong><span>Master of Computer Applications</span></div>
+<div><strong>Career goal</strong><span>Software Engineer</span></div>
+<div><strong>Interests</strong><span>AI, Programming and Web Development</span></div>
+</div>
+</div>
+</div>
+</section>
 
-        <section id="home" class="home">
-            <div class="home-content">
-                <p class="intro-text">WELCOME TO MY PORTFOLIO</p>
+<section id="skills" class="skills section">
+<div class="section-heading">
+<h2>Skills</h2>
+<p>Technologies I'm learning and working with. Pick a category to filter.</p>
+</div>
+<input type="radio" name="skillf" id="f-all" class="sr" checked>
+<input type="radio" name="skillf" id="f-web" class="sr">
+<input type="radio" name="skillf" id="f-code" class="sr">
+<input type="radio" name="skillf" id="f-tools" class="sr">
+<div class="filters">
+<label class="chip" for="f-all">All</label>
+<label class="chip" for="f-web">Web</label>
+<label class="chip" for="f-code">Programming</label>
+<label class="chip" for="f-tools">Tools</label>
+</div>
+<div class="skills-container">
+<div class="skill-card" data-cat="web"><div class="skill-icon">🌐</div><h3>HTML</h3><p>Web page structure</p></div>
+<div class="skill-card" data-cat="web"><div class="skill-icon">🎨</div><h3>CSS</h3><p>Web page styling</p></div>
+<div class="skill-card" data-cat="web code"><div class="skill-icon">⚡</div><h3>JavaScript</h3><p>Interactive websites</p></div>
+<div class="skill-card" data-cat="code"><div class="skill-icon">🐍</div><h3>Python</h3><p>Programming and AI</p></div>
+<div class="skill-card" data-cat="code"><div class="skill-icon">💻</div><h3>C / C++</h3><p>Programming fundamentals</p></div>
+<div class="skill-card" data-cat="tools"><div class="skill-icon">🔗</div><h3>Git &amp; GitHub</h3><p>Version control</p></div>
+</div>
+</section>
 
-                <h1>Hello, I'm <span>Mansi Sharma</span></h1>
+<section id="projects" class="projects section">
+<div class="section-heading">
+<h2>Projects</h2>
+<p>Things I've built and what I used to build them.</p>
+</div>
+<div class="projects-container">
+<article class="project-card featured reveal">
+<div class="project-top"><span class="badge">Featured</span><span class="project-icon">🩺</span></div>
+<h3>CuraCV-AI</h3>
+<p>An AI-powered medical PDF summarizer. Upload a medical report and get an easy-to-understand summary with suggested tests, dietary recommendations and basic physical activities.</p>
+<div class="project-tech"><span>Python</span><span>Streamlit</span><span>Google Gemini API</span><span>PyMuPDF</span></div>
+<a href="https://github.com/MansiSharmaCoder/CuraCV-AI" target="_blank" rel="noopener noreferrer" class="project-btn">View on GitHub</a>
+</article>
+<article class="project-card reveal">
+<div class="project-top"><span class="badge">Web</span><span class="project-icon">🖥️</span></div>
+<h3>Personal portfolio website</h3>
+<p>A responsive portfolio that presents my background, technical skills and projects, with a light and dark theme.</p>
+<div class="project-tech"><span>HTML</span><span>CSS</span><span>Responsive Design</span></div>
+<a href="#home" class="project-btn">Back to top</a>
+</article>
+<article class="project-card reveal">
+<div class="project-top"><span class="badge muted">In progress</span><span class="project-icon">🚀</span></div>
+<h3>Next project</h3>
+<p>I'm always building something new to deepen my programming knowledge and practical skills. Have an idea to collaborate on?</p>
+<div class="project-tech"><span>Learning</span><span>Development</span></div>
+<a href="#contact" class="project-btn">Contact me</a>
+</article>
+</div>
+</section>
 
-                <h2>Aspiring Software Engineer</h2>
+<section id="contact" class="contact section">
+<div class="section-heading">
+<h2>Contact</h2>
+<p>Have an opportunity, project idea or question? Send me a message.</p>
+</div>
+<div class="contact-wrap reveal">
+<div class="contact-info">
+<div class="contact-card">
+<div class="contact-icon">✉️</div>
+<div><h3>Email</h3><p>mansisharma12806@gmail.com</p><a href="mailto:mansisharma12806@gmail.com">Send email</a></div>
+</div>
+<div class="contact-card">
+<div class="contact-icon">💼</div>
+<div><h3>LinkedIn</h3><p>Connect professionally</p><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">Visit profile</a></div>
+</div>
+<div class="contact-card">
+<div class="contact-icon">💻</div>
+<div><h3>GitHub</h3><p>Explore my projects</p><a href="https://github.com/MansiSharmaCoder" target="_blank" rel="noopener noreferrer">Visit GitHub</a></div>
+</div>
+</div>
+<form class="contact-form" action="mailto:mansisharma12806@gmail.com?subject=Message%20from%20your%20portfolio" method="post" enctype="text/plain">
+<label>Your name<input type="text" name="Name" required autocomplete="name"></label>
+<label>Your email<input type="email" name="Email" required autocomplete="email"></label>
+<label>Message<textarea name="Message" rows="5" required></textarea></label>
+<button type="submit" class="primary-btn">Send message</button>
+</form>
+</div>
+</section>
+</main>
 
-                <p class="home-description">
-                    I am an MCA student passionate about technology,
-                    programming and building creative digital solutions.
-                    I enjoy learning new technologies and transforming
-                    ideas into meaningful projects.
-                </p>
-
-                <a href="#projects" class="primary-btn">View My Projects</a>
-            </div>
-
-            <div class="home-image">
-                <img src="mansi.png" alt="Mansi Sharma">
-            </div>
-        </section>
-
-        <section id="about" class="about section">
-            <div class="section-heading">
-                <p>GET TO KNOW ME</p>
-                <h2>About <span>Me</span></h2>
-            </div>
-
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="mansi.png" alt="Mansi Sharma">
-                </div>
-
-                <div class="about-text">
-                    <h3>Who Am I?</h3>
-
-                    <p>
-                        I am Mansi Sharma, an MCA student and an aspiring
-                        Software Engineer. I have a strong interest in
-                        software development, web technologies and
-                        artificial intelligence.
-                    </p>
-
-                    <p>
-                        I enjoy exploring new technologies, improving my
-                        programming skills and developing projects that
-                        solve real-world problems. My goal is to become
-                        a skilled software developer and continuously
-                        grow in the technology industry.
-                    </p>
-
-                    <div class="about-details">
-                        <div>
-                            <strong>Name:</strong>
-                            <span>Mansi Sharma</span>
-                        </div>
-
-                        <div>
-                            <strong>Education:</strong>
-                            <span>Master of Computer Applications</span>
-                        </div>
-
-                        <div>
-                            <strong>Career Goal:</strong>
-                            <span>Software Engineer</span>
-                        </div>
-
-                        <div>
-                            <strong>Interests:</strong>
-                            <span>AI, Programming and Web Development</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="skills section">
-            <div class="section-heading">
-                <p>WHAT I KNOW</p>
-                <h2>My <span>Skills</span></h2>
-            </div>
-
-            <p class="section-description">
-                Technologies and programming languages I am learning
-                and working with.
-            </p>
-
-            <div class="skills-container">
-                <div class="skill-card">
-                    <div class="skill-icon">🌐</div>
-                    <h3>HTML</h3>
-                    <p>Web Page Structure</p>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">🎨</div>
-                    <h3>CSS</h3>
-                    <p>Web Page Styling</p>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">⚡</div>
-                    <h3>JavaScript</h3>
-                    <p>Interactive Websites</p>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">🐍</div>
-                    <h3>Python</h3>
-                    <p>Programming and AI</p>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">💻</div>
-                    <h3>C / C++</h3>
-                    <p>Programming Fundamentals</p>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">🔗</div>
-                    <h3>Git & GitHub</h3>
-                    <p>Version Control</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="projects section">
-            <div class="section-heading">
-                <p>MY RECENT WORK</p>
-                <h2>My <span>Projects</span></h2>
-            </div>
-
-            <p class="section-description">
-                Some of the projects I have worked on.
-            </p>
-
-            <div class="projects-container">
-
-                <div class="project-card">
-                    <div class="project-number">01</div>
-
-                    <h3>CuraCV-AI</h3>
-
-                    <p>
-                        An AI-powered medical PDF summarization application
-                        that analyzes uploaded medical reports and generates
-                        easy-to-understand summaries with suggested medical
-                        tests, dietary recommendations and basic physical
-                        activities.
-                    </p>
-
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Streamlit</span>
-                        <span>Google Gemini API</span>
-                        <span>PyMuPDF</span>
-                    </div>
-
-                    <a href="https://github.com/MansiSharmaCoder/CuraCV-AI"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="project-btn">
-                        View on GitHub
-                    </a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-number">02</div>
-
-                    <h3>Personal Portfolio Website</h3>
-
-                    <p>
-                        A responsive personal portfolio website designed
-                        to showcase my introduction, educational background,
-                        technical skills and projects.
-                    </p>
-
-                    <div class="project-tech">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>Responsive Design</span>
-                    </div>
-
-                    <a href="#home" class="project-btn">
-                        View Portfolio
-                    </a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-number">03</div>
-
-                    <h3>Upcoming Project</h3>
-
-                    <p>
-                        I am continuously learning and working on new
-                        projects to improve my programming knowledge
-                        and practical development skills.
-                    </p>
-
-                    <div class="project-tech">
-                        <span>Learning</span>
-                        <span>Development</span>
-                    </div>
-
-                    <a href="#contact" class="project-btn">
-                        Contact Me
-                    </a>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="contact" class="contact section">
-            <div class="section-heading">
-                <p>LET'S CONNECT</p>
-                <h2>Contact <span>Me</span></h2>
-            </div>
-
-            <p class="section-description">
-                Have an opportunity, project idea or question?
-                Feel free to connect with me.
-            </p>
-
-            <div class="contact-container">
-                <div class="contact-card">
-                    <div class="contact-icon">✉️</div>
-                    <h3>Email</h3>
-                    <p>mansisharma12806@gmail.com</p>
-                    <a href="mailto:your-email@example.com">Send Email</a>
-                </div>
-
-                <div class="contact-card">
-                    <div class="contact-icon">💼</div>
-                    <h3>LinkedIn</h3>
-                    <p>Connect professionally</p>
-                    <a href="https://www.linkedin.com/" target="_blank"
-                       rel="noopener noreferrer">Visit Profile</a>
-                </div>
-
-                <div class="contact-card">
-                    <div class="contact-icon">💻</div>
-                    <h3>GitHub</h3>
-                    <p>Explore my projects</p>
-                    <a href="https://github.com/MansiSharmaCoder"
-                       target="_blank"
-                       rel="noopener noreferrer">Visit GitHub</a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="footer">
-        <p>© 2026 Mansi Sharma. All Rights Reserved.</p>
-        <p>Designed with passion and creativity.</p>
-    </footer>
-
+<footer class="footer">
+<p>© 2026 Mansi Sharma. All rights reserved.</p>
+<a href="#home" class="top-link">Back to top ↑</a>
+</footer>
 </body>
 </html>
